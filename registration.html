@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application - Engineering College</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-cpu"></i> Engineering College
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="programs.html">Programs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admissions.html">Admissions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="student-life.html">Student Life</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-light btn-sm ms-2 active" href="registration.html">Apply Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold">Application Form</h1>
+                    <p class="lead">Begin your journey to becoming an engineering leader. Complete the form below to start your application to Engineering College.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Form -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="card">
+                        <div class="card-body p-4">
+                            <div class="application-progress mb-5">
+                                <div class="progress" style="height: 8px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="d-flex justify-content-between mt-2">
+                                    <small>Personal Information</small>
+                                    <small>Academic Details</small>
+                                    <small>Review & Submit</small>
+                                </div>
+                            </div>
+
+                            <form id="registrationForm" novalidate>
+                                <!-- Personal Information Section -->
+                                <div class="form-section" id="section1">
+                                    <h3 class="mb-4">Personal Information</h3>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="fullName" class="form-label">Full Name *</label>
+                                            <input type="text" class="form-control" id="fullName" required>
+                                            <div class="error-message" id="fullNameError">Please enter your full name.</div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="email" class="form-label">Email Address *</label>
+                                            <input type="email" class="form-control" id="email" required>
+                                            <div class="error-message" id="emailError">Please enter a valid email address.</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="phone" class="form-label">Phone Number *</label>
+                                            <input type="tel" class="form-control" id="phone" required>
+                                            <div class="error-message" id="phoneError">Please enter a valid phone number.</div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="birthDate" class="form-label">Date of Birth *</label>
+                                            <input type="date" class="form-control" id="birthDate" required>
+                                            <div class="error-message" id="birthDateError">Please enter your date of birth.</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="address" class="form-label">Street Address *</label>
+                                            <input type="text" class="form-control" id="address" required>
+                                            <div class="error-message" id="addressError">Please enter your street address.</div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="city" class="form-label">City *</label>
+                                            <input type="text" class="form-control" id="city" required>
+                                            <div class="error-message" id="cityError">Please enter your city.</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="state" class="form-label">State/Province *</label>
+                                            <input type="text" class="form-control" id="state" required>
+                                            <div class="error-message" id="stateError">Please enter your state/province.</div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="zipCode" class="form-label">ZIP/Postal Code *</label>
+                                            <input type="text" class="form-control" id="zipCode" required>
+                                            <div class="error-message" id="zipCodeError">Please enter your ZIP/postal code.</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="d-flex justify-content-between mt-4">
+                                        <div></div> <!-- Empty div for spacing -->
+                                        <button type="button" class="btn btn-primary" onclick="showSection(2)">Next: Academic Information</button>
+                                    </div>
+                                </div>
+
+                                <!-- Academic Information Section -->
+                                <div class="form-section" id="section2" style="display: none;">
+                                    <h3 class="mb-4">Academic Information</h3>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="program" class="form-label">Desired Program *</label>
+                                            <select class="form-select" id="program" required>
+                                                <option value="">Select a program</option>
+                                                <option value="computer">Computer Engineering</option>
+                                                <option value="mechanical">Mechanical Engineering</option>
+                                                <option value="civil">Civil Engineering</option>
+                                                <option value="electrical">Electrical Engineering</option>
+                                                <option value="other">Other Engineering</option>
+                                            </select>
+                                            <div class="error-message" id="programError">Please select your desired program.</div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="studyMode" class="form-label">Study Mode *</label>
+                                            <div class="mt-2">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="studyMode" id="fullTime" value="full-time" required>
+                                                    <label class="form-check-label" for="fullTime">Full Time</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="studyMode" id="partTime" value="part-time">
+                                                    <label class="form-check-label" for="partTime">Part Time</label>
+                                                </div>
+                                            </div>
+                                            <div class="error-message" id="studyModeError">Please select your preferred study mode.</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="intake" class="form-label">Intended Intake *</label>
+                                            <input type="date" class="form-control" id="intake" required>
+                                            <div class="error-message" id="intakeError">Please select your intended intake date.</div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="education" class="form-label">Highest Education Level *</label>
+                                            <select class="form-select" id="education" required>
+                                                <option value="">Select education level</option>
+                                                <option value="high-school">High School Diploma</option>
+                                                <option value="associate">Associate Degree</option>
+                                                <option value="bachelor">Bachelor's Degree</option>
+                                                <option value="master">Master's Degree</option>
+                                                <option value="doctorate">Doctorate</option>
+                                            </select>
+                                            <div class="error-message" id="educationError">Please select your highest education level.</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                        <label for="scholarship" class="form-label">Scholarship Interest (Optional)</label>
+                                        <select class="form-select" id="scholarship">
+                                            <option value="">Not interested</option>
+                                            <option value="merit">Merit-based Scholarships</option>
+                                            <option value="need">Need-based Financial Aid</option>
+                                            <option value="athletic">Athletic Scholarships</option>
+                                            <option value="research">Research Assistantships</option>
+                                            <option value="other">Other Scholarship Opportunities</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="d-flex justify-content-between mt-4">
+                                        <button type="button" class="btn btn-outline-secondary" onclick="showSection(1)">Previous</button>
+                                        <button type="button" class="btn btn-primary" onclick="showSection(3)">Next: Account Setup</button>
+                                    </div>
+                                </div>
+
+                                <!-- Account Setup Section -->
+                                <div class="form-section" id="section3" style="display: none;">
+                                    <h3 class="mb-4">Account Setup</h3>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="password" class="form-label">Password *</label>
+                                            <input type="password" class="form-control" id="password" required minlength="8">
+                                            <div class="error-message" id="passwordError">Password must be at least 8 characters long.</div>
+                                            <div class="form-text">Password must be at least 8 characters long.</div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="confirmPassword" class="form-label">Confirm Password *</label>
+                                            <input type="password" class="form-control" id="confirmPassword" required>
+                                            <div class="error-message" id="confirmPasswordError">Passwords do not match.</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="agreeTerms" required>
+                                            <label class="form-check-label" for="agreeTerms">
+                                                I agree to the <a href="#" class="text-decoration-none">Terms and Conditions</a> and <a href="#" class="text-decoration-none">Privacy Policy</a> *
+                                            </label>
+                                        </div>
+                                        <div class="error-message" id="agreeTermsError">You must agree to the terms and conditions.</div>
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="newsletter">
+                                            <label class="form-check-label" for="newsletter">
+                                                I would like to receive updates about Engineering College programs and events
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="d-flex justify-content-between mt-4">
+                                        <button type="button" class="btn btn-outline-secondary" onclick="showSection(2)">Previous</button>
+                                        <button type="submit" class="btn btn-success">Submit Application</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <!-- Success Message -->
+                            <div class="form-success" id="successMessage">
+                                <div class="success-icon mb-4">
+                                    <i class="bi bi-check-circle-fill" style="font-size: 4rem; color: var(--secondary-color);"></i>
+                                </div>
+                                <h3>Application Submitted Successfully!</h3>
+                                <p class="lead">Thank you for applying to Engineering College. We've sent a confirmation email to your inbox.</p>
+                                <p>Our admissions team will review your application and contact you within 2-3 business days with next steps.</p>
+                                <div class="mt-4">
+                                    <a href="index.html" class="btn btn-primary me-3">Return to Homepage</a>
+                                    <a href="programs.html" class="btn btn-outline-primary">Explore Programs</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Tips -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Application Tips</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <div class="tip-icon mb-3">
+                                <i class="bi bi-clock"></i>
+                            </div>
+                            <h5>Apply Early</h5>
+                            <p>Submit your application well before the deadline to ensure consideration for scholarships and preferred housing.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <div class="tip-icon mb-3">
+                                <i class="bi bi-file-text"></i>
+                            </div>
+                            <h5>Prepare Documents</h5>
+                            <p>Have your transcripts, test scores, and recommendation letters ready before starting your application.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <div class="tip-icon mb-3">
+                                <i class="bi bi-question-circle"></i>
+                            </div>
+                            <h5>Need Help?</h5>
+                            <p>Contact our admissions team if you have any questions about the application process or requirements.</p>
+                            <a href="contact.html" class="btn btn-sm btn-outline-primary mt-2">Contact Admissions</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5>Engineering College</h5>
+                    <p>Providing excellence in engineering education since 1985. Preparing the next generation of innovators and problem solvers.</p>
+                    <div class="d-flex">
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="programs.html" class="text-white text-decoration-none">Programs</a></li>
+                        <li><a href="admissions.html" class="text-white text-decoration-none">Admissions</a></li>
+                        <li><a href="student-life.html" class="text-white text-decoration-none">Student Life</a></li>
+                        <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Contact Info</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-geo-alt"></i> 123 Innovation Drive, Tech City, TC 12345</li>
+                        <li class="mb-2"><i class="bi bi-telephone"></i> (555) 123-4567</li>
+                        <li class="mb-2"><i class="bi bi-envelope"></i> admissions@engineeringcollege.edu</li>
+                        <li><i class="bi bi-clock"></i> Mon-Fri: 8:00 AM - 6:00 PM</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Newsletter</h5>
+                    <p>Subscribe to our newsletter for the latest updates and events.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Your email">
+                        <button class="btn btn-primary" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-4 mb-3">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 Engineering College. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-white text-decoration-none">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

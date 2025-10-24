@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Engineering College</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-cpu"></i> Engineering College
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="programs.html">Programs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admissions.html">Admissions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="student-life.html">Student Life</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-light btn-sm ms-2" href="registration.html">Apply Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold">Contact Us</h1>
+                    <p class="lead">We're here to help answer your questions about Engineering College. Reach out to us through any of the channels below.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-5">
+                    <h2 class="section-title mb-4">Get In Touch</h2>
+                    <p>Our team is ready to assist you with information about programs, admissions, campus visits, and more.</p>
+                    
+                    <div class="contact-info mt-5">
+                        <div class="contact-item mb-4">
+                            <div class="d-flex align-items-start">
+                                <i class="bi bi-geo-alt fs-4 mt-1"></i>
+                                <div class="ms-3">
+                                    <h5>Address</h5>
+                                    <p>123 Innovation Drive<br>Tech City, TC 12345</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-item mb-4">
+                            <div class="d-flex align-items-start">
+                                <i class="bi bi-telephone fs-4 mt-1"></i>
+                                <div class="ms-3">
+                                    <h5>Phone</h5>
+                                    <p>(555) 123-4567</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-item mb-4">
+                            <div class="d-flex align-items-start">
+                                <i class="bi bi-envelope fs-4 mt-1"></i>
+                                <div class="ms-3">
+                                    <h5>Email</h5>
+                                    <p>admissions@engineeringcollege.edu</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-item mb-4">
+                            <div class="d-flex align-items-start">
+                                <i class="bi bi-clock fs-4 mt-1"></i>
+                                <div class="ms-3">
+                                    <h5>Office Hours</h5>
+                                    <p>Monday - Friday: 8:00 AM - 6:00 PM<br>Saturday: 9:00 AM - 1:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links mt-5">
+                        <h5 class="mb-3">Follow Us</h5>
+                        <div class="d-flex gap-3">
+                            <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-8">
+                    <div class="card">
+                        <div class="card-body p-4">
+                            <h3 class="card-title mb-4">Send Us a Message</h3>
+                            <form id="contactForm" novalidate>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="name" class="form-label">Full Name *</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                        <div class="error-message" id="nameError">Please enter your full name.</div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label">Email Address *</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                        <div class="error-message" id="emailError">Please enter a valid email address.</div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Subject *</label>
+                                    <input type="text" class="form-control" id="subject" required>
+                                    <div class="error-message" id="subjectError">Please enter a subject for your message.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="department" class="form-label">Department</label>
+                                    <select class="form-select" id="department">
+                                        <option value="">Select a department</option>
+                                        <option value="admissions">Admissions</option>
+                                        <option value="financial-aid">Financial Aid</option>
+                                        <option value="academic">Academic Programs</option>
+                                        <option value="student-services">Student Services</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message *</label>
+                                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                                    <div class="error-message" id="messageError">Please enter your message.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="spamCheck" class="form-label">What is 3 + 4? *</label>
+                                    <input type="text" class="form-control" id="spamCheck" required>
+                                    <div class="error-message" id="spamError">Please answer the simple math question correctly.</div>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="newsletter">
+                                    <label class="form-check-label" for="newsletter">Subscribe to our newsletter for updates and events</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                            </form>
+                            <div class="success-message mt-4" id="contactSuccess">
+                                <i class="bi bi-check-circle-fill me-2"></i>
+                                Thank you for your message! We'll get back to you within 2 business days.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Department Contacts -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Department Contacts</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <div class="department-icon mb-3">
+                                <i class="bi bi-person-check"></i>
+                            </div>
+                            <h5>Admissions Office</h5>
+                            <p>Questions about applications, requirements, and deadlines.</p>
+                            <p class="mb-1"><strong>Phone:</strong> (555) 123-4567</p>
+                            <p class="mb-1"><strong>Email:</strong> admissions@engineeringcollege.edu</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <div class="department-icon mb-3">
+                                <i class="bi bi-cash-coin"></i>
+                            </div>
+                            <h5>Financial Aid</h5>
+                            <p>Information about scholarships, grants, and student loans.</p>
+                            <p class="mb-1"><strong>Phone:</strong> (555) 123-4568</p>
+                            <p class="mb-1"><strong>Email:</strong> financialaid@engineeringcollege.edu</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <div class="department-icon mb-3">
+                                <i class="bi bi-book"></i>
+                            </div>
+                            <h5>Academic Affairs</h5>
+                            <p>Program information, curriculum, and academic policies.</p>
+                            <p class="mb-1"><strong>Phone:</strong> (555) 123-4569</p>
+                            <p class="mb-1"><strong>Email:</strong> academics@engineeringcollege.edu</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <div class="department-icon mb-3">
+                                <i class="bi bi-house-door"></i>
+                            </div>
+                            <h5>Student Services</h5>
+                            <p>Housing, dining, counseling, and campus life information.</p>
+                            <p class="mb-1"><strong>Phone:</strong> (555) 123-4570</p>
+                            <p class="mb-1"><strong>Email:</strong> studentservices@engineeringcollege.edu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Campus Map -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Visit Our Campus</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Campus Location</h4>
+                            <p>Our campus is located in the heart of Tech City, easily accessible by public transportation and with ample parking available for visitors.</p>
+                            
+                            <div class="mt-4">
+                                <h5>Directions</h5>
+                                <p><strong>From Downtown:</strong> Take Innovation Expressway north to Exit 15. Follow signs to Engineering College.</p>
+                                <p><strong>Public Transit:</strong> Take the Blue Line to Innovation Station. Campus is a 5-minute walk from the station.</p>
+                            </div>
+                            
+                            <div class="mt-4">
+                                <h5>Parking</h5>
+                                <p>Visitor parking is available in Lot A near the Main Administration Building. Daily parking passes can be obtained at the Security Office.</p>
+                            </div>
+                            
+                            <div class="mt-4">
+                                <a href="#" class="btn btn-primary">Download Campus Map</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="campus-map">
+                        <div class="map-placeholder bg-light rounded d-flex align-items-center justify-content-center" style="height: 400px;">
+                            <div class="text-center">
+                                <i class="bi bi-map fs-1 text-muted mb-3"></i>
+                                <h5>Interactive Campus Map</h5>
+                                <p class="text-muted">Campus map would be embedded here</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Common Questions</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            How can I schedule a campus tour?
+                            <span class="faq-toggle"><i class="bi bi-chevron-down"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            You can schedule a campus tour by calling our Admissions Office at (555) 123-4567 or by using the online tour scheduling system on our website. Tours are available Monday through Friday at 10:00 AM and 2:00 PM, and select Saturdays at 11:00 AM.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            What should I bring to my campus visit?
+                            <span class="faq-toggle"><i class="bi bi-chevron-down"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            We recommend bringing comfortable walking shoes, weather-appropriate clothing, and any questions you have for our admissions team. You may also want to bring a notebook to take notes during your visit.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Can I meet with faculty during my visit?
+                            <span class="faq-toggle"><i class="bi bi-chevron-down"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            Yes, we can arrange meetings with faculty members in your area of interest with advance notice. Please indicate this preference when scheduling your visit, and we'll do our best to coordinate a meeting based on faculty availability.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Is overnight accommodation available for prospective students?
+                            <span class="faq-toggle"><i class="bi bi-chevron-down"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            Yes, we offer overnight stays with current students for high school seniors who have applied to Engineering College. These visits are typically available from September through April and must be scheduled at least two weeks in advance.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 text-center text-white cta-section">
+        <div class="container">
+            <h2 class="mb-4">Ready to Learn More?</h2>
+            <p class="lead mb-4">Contact our admissions team to get personalized information about Engineering College.</p>
+            <a href="tel:5551234567" class="btn btn-light btn-lg me-3"><i class="bi bi-telephone me-2"></i>Call Us</a>
+            <a href="mailto:admissions@engineeringcollege.edu" class="btn btn-outline-light btn-lg"><i class="bi bi-envelope me-2"></i>Email Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5>Engineering College</h5>
+                    <p>Providing excellence in engineering education since 1985. Preparing the next generation of innovators and problem solvers.</p>
+                    <div class="d-flex">
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="programs.html" class="text-white text-decoration-none">Programs</a></li>
+                        <li><a href="admissions.html" class="text-white text-decoration-none">Admissions</a></li>
+                        <li><a href="student-life.html" class="text-white text-decoration-none">Student Life</a></li>
+                        <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Contact Info</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-geo-alt"></i> 123 Innovation Drive, Tech City, TC 12345</li>
+                        <li class="mb-2"><i class="bi bi-telephone"></i> (555) 123-4567</li>
+                        <li class="mb-2"><i class="bi bi-envelope"></i> admissions@engineeringcollege.edu</li>
+                        <li><i class="bi bi-clock"></i> Mon-Fri: 8:00 AM - 6:00 PM</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Newsletter</h5>
+                    <p>Subscribe to our newsletter for the latest updates and events.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Your email">
+                        <button class="btn btn-primary" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-4 mb-3">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 Engineering College. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-white text-decoration-none">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
